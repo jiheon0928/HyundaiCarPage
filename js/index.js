@@ -1,5 +1,3 @@
-import { setupProgressBar } from "../../eunseo/progressBar.js";
-
 import {
   electronicCarArr,
   linkUrlList,
@@ -13,6 +11,7 @@ import { closedetail } from "./close.js";
 import { setupLinkEvents, setupSearchToggle } from "./eventHandlers.js";
 import { footeropen } from "./footerlistopen.js";
 import { moveListFunc } from "./move.js";
+import { setupProgressBar } from "./progressBar.js";
 import { setupScrollHandler } from "./scrollHandler.js";
 
 carCardCreat(electronicCarArr, electronicCarList1);

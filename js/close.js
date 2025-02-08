@@ -3,7 +3,9 @@ export const closedetail = () => {
     v.addEventListener("click", () => {
       document.querySelectorAll(".item_detail").forEach((v) => {
         v.style.display = "none";
-        document.body.style.overflow = "hidden";
+        if (window.innerWidth <= 480) {
+          document.body.style.overflow = "hidden";
+        }
       });
 
       document.querySelectorAll(".Detail_button_list").forEach((v) => {
@@ -28,7 +30,9 @@ export const closedetail = () => {
       const detailElement2 = document.querySelectorAll(".Detail_button_list")[
         i
       ];
-      document.body.style.overflow = "";
+      if (window.innerWidth <= 480) {
+        document.body.style.overflow = "hidden";
+      }
       detailElement.style.display = "none";
       detailElement2.style.marginBottom = "0px";
     });

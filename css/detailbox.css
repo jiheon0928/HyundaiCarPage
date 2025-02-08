@@ -43,7 +43,6 @@
 
 .information {
   display: flex;
-  gap: 20px;
 }
 
 .Read_more {
@@ -63,11 +62,10 @@
   display: flex;
   flex-direction: column;
   gap: 10px;
+  padding: 0 20px;
 }
 .bar {
-  color: gray;
-  font-size: 30px;
-  font-weight: 300;
+  border-left: 1px solid black;
 }
 
 .informationText {

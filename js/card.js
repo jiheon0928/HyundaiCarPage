@@ -32,23 +32,23 @@ export const carCardCreat = (carCatgory, space) => {
                   ${carCatgory[i].price} 만원~
                 </p></span
               >
-              <span class="bar">|</span>
-              <span class="informationList"
+             
+              <span class="informationList bar"
                 ><p class="informationName">연비</p>
                 <p class="informationText">
                   ${carCatgory[i].fuelEfficiency}
                 </p></span
               >
-              <span class="bar">|</span>
-              <span class="informationList"
+             
+              <span class="informationList  bar"
                 ><p class="informationName">승차 인원</p>
                 <p class="informationText">${carCatgory[i].personnel}</p></span
               >
-              <span class="bar">|</span>
-              <span class="informationList"
+           
+              <span class="informationList bar"
                 ><p class="informationName">배기량</p>
                 <p class="informationText">
-                  ${carCatgory[i].displacement}
+                 ${carCatgory[i].displacement}
                 </p></span
               >
             </div>

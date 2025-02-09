@@ -6,8 +6,9 @@
   color: #ffff;
   font-size: 16px;
 
-  position: fixed;
+  position: sticky;
   top: 80px;
+
   transition: all 0.6s;
 }
 

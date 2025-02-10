@@ -7,7 +7,6 @@ export const setupScrollHandler = () => {
   window.addEventListener("scroll", () => {
     const currentScroll = window.scrollY;
 
-    console.log(currentScroll);
     const isScrolling = currentScroll > lastScrollTop;
 
     header.style.transform = `translateY(${isScrolling ? "-100%" : "0%"})`;

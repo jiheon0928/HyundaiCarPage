@@ -23,7 +23,6 @@ carCardCreat(passengerCarArr, passengerCar);
 carCardCreat(suvArr, SUV);
 closedetail();
 footeropen();
-
 setupLinkEvents(linkUrlList);
 setupSearchToggle();
 setupScrollHandler();

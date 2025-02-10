@@ -8,24 +8,26 @@
 * {
   font-family: "Pretendard-Regular";
 }
+
 main {
   margin-top: 135px;
 }
 
 header {
-  position: fixed;
+  position: sticky;
   top: 0px;
   left: 0px;
   z-index: 1;
   background-color: white;
   width: 100%;
+  height: 80px;
   transition: all 0.6s;
 }
 
 .header__nav {
   width: 100%;
   max-width: 1400px;
-  height: 80px;
+  height: 100%;
   margin: 0 auto;
 
   display: flex;
@@ -35,12 +37,13 @@ header {
   font-size: 16px;
 }
 
-.header__nav > img {
+.header__nav > .header_img {
   width: 200px;
 }
 
 .inb_list {
   display: flex;
+  flex-direction: row;
   align-items: center;
   gap: 40px;
 }
@@ -88,10 +91,8 @@ header {
   top: 18px;
 }
 
-.language:hover {
-  .selectlan_blur {
-    display: flex;
-  }
+.language:hover .selectlan_blur {
+  display: flex;
 }
 
 .selectlan_blur > li:hover {
@@ -123,10 +124,8 @@ header {
   position: absolute;
   top: 20px;
 }
-.login:hover {
-  .login_blur {
-    display: flex;
-  }
+.login:hover .login_blur {
+  display: flex;
 }
 
 .search__wrap {
@@ -135,7 +134,7 @@ header {
   background-color: #f2f2f2;
   display: none;
 
-  position: fixed;
+  position: sticky;
   top: 80px;
 }
 
@@ -146,9 +145,11 @@ header {
   margin: 0 auto;
 
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
   gap: 450px;
+
+  position: relative;
 }
 
 .search_input {
@@ -179,5 +180,43 @@ header {
 
 .fa-xmark {
   font-size: 40px;
-  color: rgba(0, 0, 0, 0.432);
+  color: rgba(36, 35, 35, 0.182);
+
+  position: absolute;
+  right: 5px;
+}
+
+.fa-xmark:hover {
+  animation: rotate-center 0.6s ease-in-out both;
+}
+
+@-webkit-keyframes rotate-center {
+  0% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotate-center {
+  0% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 480px) {
+  .inb_list {
+    flex-direction: row; /* 가로 정렬 유지 */
+    justify-content: space-between; /* 필요 시 간격 조정 */
+  }
+  .header_img {
+    width: 10px;
+  }
 }

@@ -25,3 +25,20 @@ export const setupSearchToggle = () => {
     toggleDisplay(navsWrap, true);
   });
 };
+
+export const setupClickDetailButton = () => {
+  const DetailButton = document.querySelector(".Detail_button");
+  const header = document.querySelector("#header");
+  const navsWrap = document.querySelector(".navs__wrap");
+  const searchWrap = document.querySelector(".search__wrap");
+
+  DetailButton.addEventListener("click", () => {
+    if (window.innerWidth <= 480) {
+      header.style.transform = "translateY(-100%)";
+      navsWrap.style.top = searchWrap.style.top = "0px";
+    } else {
+      header.style.transform = "translateY(0%)";
+      navsWrap.style.top = searchWrap.style.top = "80px";
+    }
+  });
+};

@@ -1,0 +1,62 @@
+@media screen and (max-width: 480px) {
+  header {
+    border-bottom: 1px solid #c4c4c4;
+  }
+  .header__nav {
+    max-width: 90%;
+  }
+  .inb_list {
+    color: #666;
+  }
+  .inb_list > li,
+  .trendyHyundai,
+  .language,
+  .login {
+    display: none;
+  }
+  .header__nav > #header_img {
+    width: 130px;
+  }
+
+  .navs__wrap {
+    border-bottom: 1px solid #666;
+    background-color: white;
+    font-size: 14px;
+    color: #c4c4c4;
+  }
+  .navs__nav {
+    max-width: 90%;
+    overflow-x: scroll;
+    white-space: nowrap;
+  }
+  .navs__nav::-webkit-scrollbar {
+    height: 5px;
+  }
+  .navs__nav::-webkit-scrollbar-thumb {
+    background: #002c5fc5;
+    border-radius: 10px;
+  }
+  .search__wrap {
+    background-color: #007fa8;
+  }
+  .search_box {
+    max-width: 95%;
+    color: white;
+  }
+  .search_input {
+    width: 100%;
+  }
+  .search_input,
+  .input {
+    background-color: #007fa8;
+  }
+  .input::placeholder {
+    color: white;
+  }
+  .search_input > i {
+    color: rgba(255, 255, 255, 0.658);
+  }
+  #close_btn {
+    display: none;
+  }
+}

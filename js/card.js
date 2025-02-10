@@ -1,8 +1,3 @@
-const electronicCarList1 = document.getElementById("electronicCarList1");
-const Ncar = document.getElementById("Ncar");
-const passengerCar = document.getElementById("passengerCar");
-const SUV = document.getElementById("SUV");
-
 export const carCardCreat = (carCatgory, space) => {
   carCatgory.forEach((v, i) => {
     const carList = document.createElement("ul");
@@ -25,30 +20,30 @@ export const carCardCreat = (carCatgory, space) => {
             </div>
             <div class="item_detail_box_title">${carCatgory[i].name}</div>
             <div class="Read_more">자세히 보기 〉</div>
-            <div class="information">
+            <div class="information_">
               <span class="informationList"
                 ><p class="informationName">가격</p>
                 <p class="informationText">
                   ${carCatgory[i].price} 만원~
                 </p></span
               >
-              <span class="bar">|</span>
-              <span class="informationList"
+             
+              <span class="informationList bar"
                 ><p class="informationName">연비</p>
                 <p class="informationText">
                   ${carCatgory[i].fuelEfficiency}
                 </p></span
               >
-              <span class="bar">|</span>
-              <span class="informationList"
+             
+              <span class="informationList  bar"
                 ><p class="informationName">승차 인원</p>
                 <p class="informationText">${carCatgory[i].personnel}</p></span
               >
-              <span class="bar">|</span>
-              <span class="informationList"
+           
+              <span class="informationList bar"
                 ><p class="informationName">배기량</p>
                 <p class="informationText">
-                  ${carCatgory[i].displacement}
+                 ${carCatgory[i].displacement}
                 </p></span
               >
             </div>

@@ -27,6 +27,7 @@ export const closedetail = () => {
       const detailElement2 = document.querySelectorAll(".Detail_button_list")[
         i
       ];
+
       detailElement.style.display = "none";
       detailElement2.style.marginBottom = "0px";
     });
